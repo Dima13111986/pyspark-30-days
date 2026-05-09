@@ -110,3 +110,20 @@ pyspark-30-days/
 - **День 4:** Transformations vs actions, lazy evaluation, show/count/collect deep dive
 - **День 5:** Читання Parquet, запис у різні формати, **міні-проєкт #1: PySpark Starter Notebook**
 
+## День 2 — Explicit schema і JSON
+- Дата: 2026-05-09
+- Статус: Завершено
+- Notebook: fabric/day-02-explicit-schema-json.ipynb
+- Datasets: Files/data/sample_sales.csv, Files/data/customers_json
+- PySpark навички:
+  - StructType, StructField
+  - StringType, IntegerType, DoubleType, DateType, BooleanType
+  - .schema(...) при читанні CSV і JSON
+  - dateFormat option для CSV
+  - порівняння inferred vs explicit schema
+  - createOrReplaceTempView + spark.sql
+- Spark SQL: GROUP BY + CASE WHEN для базового data quality звіту
+- Помилки: 
+- Що повторити: коли nullable=False має сенс, як Spark зберігає JSON (папка, не файл)
+- GitHub commit: feat: day 02 explicit schema and json reading
+
