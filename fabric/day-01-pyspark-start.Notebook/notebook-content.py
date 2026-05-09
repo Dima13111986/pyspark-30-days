@@ -44,7 +44,7 @@ print(f"App name: {spark.sparkContext.appName}")
 # У Fabric шлях до файлу в Lakehouse має префікс "Files/"
 # Це relative path до Lakehouse, який прикріплений до notebook
 
-csv_path = "Files/sample_sales.csv"
+csv_path = "Files/data/sample_sales.csv"
 
 df_sales = spark.read \
     .option("header", "true") \
